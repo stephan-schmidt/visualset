@@ -1,0 +1,1339 @@
+/*****************************/
+/*** Core html setup stuff ***/
+/*****************************/
+
+html {
+  height: 100%;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	font-size: 11pt;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #979797;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+input.button { cursor: pointer; }
+
+input.text {
+    border: none;
+    padding: 0;
+}
+
+input.submit {
+	cursor: pointer;
+    padding: 0;
+    border: none;
+    background: #979797 url(../images/submit.gif) no-repeat top right;
+    width: 22px;
+    height: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+input.checkbox {
+	margin-right: 20px;
+}
+
+img { border: 0 none; }
+.transform_none {
+	text-transform: none;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.hidden {
+	display: none;
+}
+
+/*****************************************/
+/********* System messages styles ********/
+/*****************************************/
+
+#system-message dd ul {
+	border: none;
+	padding: 5px;
+	font-size: 9pt;
+	font-weight: normal;
+	background-color: #0055bb;
+    color: #fff;
+    padding-left: 20px;
+    text-indent: 0;
+}
+#system-message dd.error ul {
+	background-color: #ff64fe;
+	color: #fff;
+	border: none;
+}
+
+
+/*****************************************/
+/*** Template specific layout elements ***/
+/*****************************************/
+
+div#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	padding-top: 10px;
+}
+div#header
+{
+	height: 90px;
+	margin-bottom: 10px;
+    padding-top: 10px;
+	background: url(../images/block_gray_right.gif) no-repeat right top;
+	color: #fff;
+}
+div#header a {
+	color: #fff;
+}
+div#header_l {
+    background: #979797 url(../images/block_gray_left.gif) no-repeat left bottom;
+}
+div#header div.logo
+{
+	margin-left: 15px;
+	float: left;
+	width: 110px;
+	padding-top: 5px;
+}
+div#header div.menu
+{
+    float: left;
+    width: 120px;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+div#header div.menu td {
+	padding-bottom: 6px;
+}
+div#header div.menu a {
+	font-size: 9pt;
+	font-weight: normal;
+}
+
+div#header div.title
+{
+	padding-right: 40px;
+	padding-top: 5px;
+	height: 25px;
+	float: right;
+}
+div#header div.title_small
+{
+	clear: right;
+    float: right;
+    height: 25px;
+    width: 200px;
+    text-align: right;
+    padding-right: 35px;
+    font-size: 9pt;
+    color: #f9f9f9;
+}
+div#header div.total {
+	clear: right;
+    float: right;
+    padding-right: 35px;
+	font-size: 8pt;
+	text-align: right;
+}
+div#header div.total p {
+	margin: 0;
+	padding: 0;
+}
+div#header_l
+{
+	background: #979797 url(../images/block_gray_left.gif) no-repeat left bottom;
+}
+div#login {
+	float: left;
+	height: 100%;
+	font-size: 7pt;
+}
+div#login .login_left {
+	float: left;
+	width: 235px;
+	height: 100%;
+}
+div#login .login_right {
+    float: left;
+    width: 250px;
+    height: 85px;
+    padding-top: 2px;
+    overflow: hidden;
+    font-size: 9pt;
+}
+div#login .login_right .message {
+	padding-left: 25px;
+    padding-top: 6px;
+    text-transform: none;
+    font-size: 13px;
+}
+div#login .login_title {
+	background: url(../images/login.jpg) no-repeat left;
+	height: 21px;
+	padding-top: 2px;
+	padding-left: 31px;
+	font-size: 8pt;
+	line-height: 19px;
+	margin-left: 8px;
+}
+div#login div.form {
+	float: left;
+	padding-top: 2px;
+	width: 180px;
+	height: 29px;
+}
+div#login .logout {
+	width: 250px;
+}
+div#login .logout_title {
+	background: url(../images/account_icon.gif) no-repeat left;
+    height: 18px;
+    padding-left: 24px;
+    padding-top: 3px;
+    font-size: 9pt;
+    line-height: 18px;
+}
+div#login .info {
+	padding-left: 24px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    font-size: 7pt;
+}
+div#login .info .label {
+	float: left;
+	width: 105px;
+}
+div#login .extend {
+	float: left;
+	padding-top: 5px;
+	padding-left: 24px;
+	width: 105px;
+	background: url(../images/submit.gif) 80px 0 no-repeat;
+	height: 21px;
+}
+div#login .extend a {
+	display: block;
+	width: 78px;
+}
+div#login .logout_button {
+	float: left;
+	padding-top: 5px;
+	width: 105px;
+    background: url(../images/submit.gif) 80px 0 no-repeat;
+    height: 21px;
+}
+div#login .logout_button a {
+	display: block;
+    width: 102px;
+}
+div#login a {
+	color: #fff;
+}
+div#login div.line {
+	height: 14px;
+}
+div#login div.caption {
+	float: left;
+	width: 70px;
+	font-size: 8pt;
+	text-align: right;
+}
+div#login div.input {
+	float: left;
+	padding-left: 5px;
+}
+div#login div.button {
+	float: left;
+	padding-top: 3px;
+	height: 22px;
+	width: 22px;
+}
+div#login input.text {
+	width: 95px;
+	height: 11px;
+	font-size: 7pt;
+}
+div#login div.remember {
+	height: 20px;
+	font-size: 7.5pt;
+}
+div#login div.links {
+	clear: both;
+	padding-left: 75px;
+	padding-right: 20px;
+}
+div#login input.checkbox {
+	margin: 0;
+	margin-right: 5px;
+}
+div#login .get_account {
+	background: url(../images/panel_star.gif) no-repeat left;
+	height: 20px;
+	line-height: 20px;
+	font-size: 9pt;
+	padding-left: 25px;
+}
+div#header .settings {
+    float: left;
+    height: 100%;
+    font-size: 7pt;
+}
+div#header .settings_title {
+	background: url(../images/settings_icon.gif) no-repeat left;
+    height: 20px;
+    padding-left: 27px;
+    padding-top: 2px;
+    margin-bottom: 8px;
+    font-size: 9pt;
+    line-height: 20px;
+}
+div#header .settings .color {
+	float: left;
+	padding-left: 27px;
+	width: 73px;
+	padding-bottom: 6px;
+}
+div#header .settings .caption {
+	height: 23px;
+}
+div#header .settings div.colors {
+    width: 60px;
+}
+div#header .settings div.colors div {
+    float: left;
+    width: 7px;
+    height: 7px;
+    margin-right: 6px;
+    margin-bottom: 3px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+div#header .settings div.colors div.active {
+    border: 1px solid #000;
+    cursor: default;
+}
+div#header .settings span.image {
+    padding-left: 2px;
+    padding-right: 2px;
+    cursor: pointer;
+}
+div#header .settings .rows {
+	float: left;
+}
+div#header .settings .apply {
+	float: left;
+	padding-top: 36px;
+	padding-left: 6px;
+    width: 22px;
+    height: 21px;
+}
+div#header .settings .apply a {
+    display: block;
+    height: 21px;
+    width: 22px;
+    background: url(../images/submit.gif) 0 0 no-repeat;
+}
+
+div#main {
+	color: #979797;
+    font-weight: bold;
+}
+div#main div.componentheading {
+	margin-top: 10px;
+	height: 23px;
+	background: #979797 url(../images/block_small_right.gif) no-repeat right top;
+	color: #fff;
+	font-size: 11pt;
+	padding-left: 8px;
+	padding-top: 2px;
+	font-weight: bold;
+}
+div#main div.componentheading a {
+    color: #fff;
+}
+div#main div.componentheading div {
+	float: left;
+	margin-right: 20px;
+}
+div#main div.componentheading div.title {
+	padding-top: 3px;
+}
+div#main div.componentheading div.title_block {
+	padding-top: 4px;
+	font-size: 8pt;
+}
+div#main div.componentheading div.submit,
+div#main div.catalog_bottom div.submit {
+	float: right;
+}
+div#main .contentpane, div#main .contentpaneopen
+{
+	padding: 20px;
+    border: 1px solid #979797;
+    width: 100%;
+    font-family: Verdana;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    text-transform: none;
+    color: #60606a;
+}
+div#main div.contentpane {
+	width: 958px;
+}
+
+div#main div.block_c {
+    background: url(../images/block_left.gif) no-repeat left bottom;
+}
+div#main div.block_l {
+    background: url(../images/block_border.gif) repeat-y left;
+}
+div#main div.block_b {
+    background: url(../images/block_bottom.gif) repeat-x bottom;
+}
+div#main div.progress {
+    height: 35px;
+    background: #979797 url(../images/block_gray_left.gif) no-repeat left bottom;
+    color: #fff;
+    padding-top: 5px;
+    font-weight: bold;
+}
+div#main div.progress a {
+	color: #fff;
+}
+div#main div.progress div {
+	float: left;
+	height: 27px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+div#main div.progress div.title, div#main div.progress div.step {
+	border-right: 2px dotted #fff;
+}
+div#main div.progress div.title {
+	padding-left: 25px;
+    padding-top: 5px;
+    height: 22px;
+}
+div#main div.progress div.step {
+	padding-top: 1px;
+    font-size: 8pt;
+    color: #a9a9a9;
+}
+div#main div.progress div.step a {
+    color: #a9a9a9;
+}
+div#main div.progress p {
+	margin: 0;
+}
+div#main div.progress div.submit {
+	float: right;
+	padding-top: 5px;
+	height: 22px;
+}
+div#main div.progress div.submit a {
+	color: #fff;
+	font-weight: bold;
+	margin-left: 20px;
+}
+div#main div.progress div.submit a:hover {
+	text-decoration: none;
+}
+div#main div.progress div.active {
+    color: #fff;
+}
+div#main div.progress input.login, div#main div.progress input.submit {
+	width: 200px;
+	padding: 0;
+}
+
+/********************************/
+/*** Registration form styles ***/
+/********************************/
+
+div#main .get_account .componentheading .title {
+	font-size: 9pt;
+}
+div#main .componentheading div.close {
+	float: right;
+	font-size: 9pt;
+	padding-top: 3px;
+}
+div#main .get_account .contentpane {
+	padding: 0;
+	text-transform: none;
+	color: #515151;
+	font-family: Arial;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: normal;
+}
+div#main .get_account .contentpane td {
+	padding: 60px 55px 45px;
+}
+div#main .get_account .contentpane div.text {
+	height: 45px;
+}
+div#main .get_account .contentpane .period_title {
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 28px;
+}
+div#main .get_account .contentpane p,
+div#main .register .contentpane p {
+    margin: 6px 0;
+}
+div#main .get_account .contentpane .period {
+	border: 1px dotted #cbcbcb;
+	padding: 10px 16px;
+	margin-bottom: 47px;
+}
+div#main .get_account .contentpane .paypal_image {
+	float: left;
+	width: 155px;
+	height: 32px;
+	background: url(../images/paypal.jpg) 0 0 no-repeat;
+}
+div#main .get_account .contentpane .paypal_border {
+	height: 31px;
+	border-bottom: 1px dotted #cbcbcb;
+}
+div#main .get_account .contentpane .paypal {
+	clear: both;
+	border: 1px dotted #cbcbcb;
+	border-top: none;
+    padding: 10px 16px;
+}
+div#main .get_account .contentpane .buttons {
+	padding-top: 12px;
+}
+div#main .get_account .contentpane .buttons div {
+	float: right;
+	height: 16px;
+	line-height: 16px;
+	font-size: 11px;
+	padding: 0 12px;
+	cursor: pointer;
+}
+div#main .get_account .contentpane .cancel {
+	border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    background: #eeeeee;
+	margin-left: 4px;
+}
+div#main .get_account .contentpane .pay {
+	border-top: 1px solid #a4c8e8;
+    border-left: 1px solid #a4c8e8;
+    border-right: 1px solid #4279bc;
+    border-bottom: 1px solid #4279bc;
+	background: #348cd3;
+	color: #ffffff;
+}
+div#main .get_account .contentpane strong {
+    color: #525252;
+}
+div#main .get_account .account_info {
+	padding: 10px 16px;
+	padding-left: 40px;
+	border: 1px dotted #cbcbcb;
+    margin-bottom: 47px;
+}
+div#main form.get_account div.caption {
+    clear: left;
+    float: left;
+    width: 140px;
+    margin-bottom: 5px;
+    line-height: 22px;
+}
+div#main form.get_account div.input {
+	float: left;
+	padding-right: 40px;
+	margin-bottom: 5px;
+}
+div#main form.get_account div.error {
+	height: 28px;
+	line-height: 22px;
+}
+div#main form.get_account div.separator {
+	height: 16px;
+}
+div#main form.get_account input.text {
+	width: 170px;
+	padding: 4px 2px;
+	border: 1px solid #b4d0e6;
+    border-top: 1px solid #3d7caf;
+    font-size: 11px;
+    color: #515151;
+}
+
+div#main form.register {
+	color: #000;
+}
+div#main .register .componentheading .title {
+    font-size: 9pt;
+}
+div#main .register .contentpane {
+	padding: 60px 55px 45px;
+}
+div#main form.register div.submit input.submit {
+	width: 92px;
+}
+div#main form.register div.checkbox {
+	margin-top: 10px;
+	padding-left: 200px;
+}
+
+/*************************/
+/*** Pagination styles ***/
+/*************************/
+
+div#main div.componentheading div.pagination, div#main div.pagination {
+	float: right;
+	text-transform: none;
+	font-size: 8pt;
+    font-weight: normal;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+div#main div.pagination a {
+	color: #fff;
+	font-size: 8pt;
+    font-weight: normal;
+}
+div#main div.pagination span {
+	padding-left: 4px;
+    padding-right: 4px;
+}
+div#main div.pagination span.active {
+	font-size: 9pt;
+	font-weight: bold;
+}
+
+div#footer {
+    color: #979797;
+    height: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 10pt;
+    text-transform: none;
+}
+div#footer div.copyright {
+	float: left;
+}
+div#footer div.menu
+{
+    float: right;
+    margin-right: 20px;
+}
+div#footer div.menu a {
+	text-decoration: none;
+    font-weight: normal;
+    font-size: 9pt;
+}
+
+form.input-form .big {
+	font-size: 13pt;
+}
+form.input-form div.title {
+	float: left;
+}
+form.input-form div.submit {
+	float: right;
+	margin-right: 20px;
+}
+form.input-form input.submit {
+    padding-top: 0;
+    text-align: left;
+    /*width: 220px;*/
+}
+form.input-form input.text {
+	/*background-color: #979797;*/
+	/*color: #fff;*/
+	border: 1px solid #979797;
+}
+form.input-form tr {
+	height: 25px;
+}
+form.input-form td {
+	width: 33%;
+}
+form.input-form td.error {
+	color: #fb0400;
+	text-transform: none;
+}
+
+/*****************************/
+/*** Search block styles   ***/
+/*****************************/
+
+form.search {
+	font-size: 8pt;
+}
+div#main table.contentpane_search
+{
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 5px;
+    border-right: 1px solid #979797;
+    font-family: Arial;
+    font-size: 8pt;
+    font-weight: bold;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #000000;
+}
+div#main form.search div.componentheading div.checkbox {
+	padding-top: 0;
+}
+form.search div.title_block {
+	color: #000;
+}
+form.search table {
+	height: 100%;
+	width: 100%;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+form.search td {
+	padding: 0;
+}
+form.search select {
+	height: 13px;
+	width: 100%;
+	font-size: 6pt;
+	font-weight: bold;
+	color: #000;
+	border: 1px solid #000;
+}
+form.search td.block {
+	padding: 5px;
+	padding-bottom: 10px;
+}
+form.search td.objecttype {
+	width: 80px;
+}
+form.search td.objecttype input {
+	float: left;
+}
+form.search td.block span.text {
+	display: block;
+	float: left;
+	padding-top: 5px;
+	padding-left: 2px;
+}
+form.search td.bottom {
+	padding-bottom: 5px;
+}
+form.search td.image {
+	padding-left: 5px;
+    padding-right: 5px;
+}
+form.search td.right_border {
+	border-right: 2px dotted #979797;
+}
+form.search td.bottom_border {
+	border-bottom: 2px dotted #979797;
+}
+form.search td.image, form.search td.center {
+	text-align: center;
+}
+form.search td.big_span span {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+form.search span.not_active {
+	color: #979797;
+	cursor: pointer;
+}
+form.search span.image, form.search span.image_activate {
+    cursor: pointer;
+}
+form.search td.others span.image,
+ form.search td.others span.image_activate {
+    padding: 0 20px;
+}
+form.search span.image_hidden {
+	display: none;
+}
+form.search table.camheight {
+	width: 45px;
+	height: 70px;
+	margin-left: 16px;
+}
+form.search table.light {
+    width: 65px;
+    height: 60px;
+}
+form.search div.cam_image {
+    height: 80px;
+}
+form.search div.text {
+	text-align: center;
+}
+form.search table.camdirection td.left, form.search table.camdirection td.back_right {
+	padding-top: 9px;
+}
+form.search table.camdirection td.front_left, form.search table.camdirection td.right {
+    vertical-align: top;
+}
+form.search table.camdirection td.sign_back {
+	padding-left: 55px;
+}
+form.search table.camdirection td.sign_front {
+    padding-left: 10px;
+}
+div#main form.search .catalog_bottom {
+	padding-top: 0px;
+	height: 27px;
+}
+form.search input.submit {
+	background: #979797 url(../images/search_button.gif) no-repeat top left;
+	width: 26px;
+	height: 26px;
+}
+
+/*******************************/
+/*** Products catalog styles ***/
+/*******************************/
+
+div#main table.catalog {
+	padding: 0;
+	padding-top: 20px;
+	padding-left: 4px;
+}
+table.catalog td
+{
+	text-align: center;
+	padding: 0;
+}
+table.catalog div.image {
+	margin: auto;
+	width: 110px;
+    height: 90px;
+    padding: 0;
+    overflow: hidden;
+}
+table.catalog div.product {
+	float: left;
+	width: 124px;
+	height: 130px;
+	padding-top: 10px;
+	overflow: hidden;
+}
+table.catalog div.preview_links {
+	height: 10px;
+	text-align: left;
+	padding-top: 7px;
+}
+table.catalog div.preview_links div {
+	float: left;
+	margin-left: 15px;
+}
+table.catalog div.preview_links div.small {
+	margin-left: 32px;
+}
+table.catalog .preview_stars {
+	padding-left: 18px;
+	padding-top: 3px;
+	height: 12px;
+}
+table.catalog .preview_stars div {
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin-left: 13px;
+}
+table.catalog .preview_stars .star {
+	background: url(../images/star.gif) no-repeat;
+}
+div#main div.catalog_bottom {
+    height: 22px;
+    background: #979797 url(../images/block_small_left.gif) no-repeat left bottom;
+    color: #fff;
+    padding-top: 3px;
+    padding-left: 17px;
+    padding-right: 10px;
+}
+div#main div.catalog_bottom span.text {
+	font-size: 10px;
+    padding-right: 30px;
+}
+div#main div.catalog_bottom span.premium {
+	background: url(../images/panel_star.gif) no-repeat left center;
+	padding-left: 24px;
+}
+div#main div.catalog_bottom a {
+	color: #fff;
+}
+div#main div.componentheading div.sort {
+	padding-left: 50px;
+	padding-top: 4px;
+	font-size: 8pt;
+}
+div#main div.componentheading div.sort span {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+div#main div.componentheading a.active {
+	color: #000;
+}
+div#main div.componentheading div.mirror {
+	margin-left: 230px;
+	font-size: 8pt;
+}
+div#main div.componentheading div.mirror div {
+	padding-top: 4px;
+	float: left;
+}
+div#main div.componentheading div.mirror div.image {
+	margin-right: 10px;
+}
+
+/*******************************/
+/*** Shopping cart styles ******/
+/*******************************/
+
+div#cart {
+	background-color: #979797;
+}
+div#cart div.componentheading div.title {
+	background: url(../images/basket_small_gray.gif) no-repeat left;
+	padding-left: 37px;
+}
+div#cart div.cart_items {
+	float: left;
+	width: 799px;
+    overflow: auto;
+    border-left: 1px solid #979797;
+    background-color: #fff;
+    height: 220px;
+}
+div#cart div.cart_items table.catalog {
+	border: none;
+	height: 200px;
+	padding: 0;
+}
+div#cart div.cart_items table.catalog div.image {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 110px;
+}
+div#main .cart_total {
+	float: right;
+	width: 180px;
+	padding-left: 10px;
+	padding-right: 10px;
+    color: #fff;
+    font-size: 10pt;
+}
+div#main .cart_total .big {
+	font-size: 14pt;
+}
+div#main .cart_total table {
+	width: 100%;
+	height: 220px;
+	border-bottom: 2px dotted #fff;
+}
+div#main .cart_total td {
+	padding: 0;
+	padding-bottom: 10px;
+}
+div#cart div.progress {
+	clear: both;
+}
+div#cart div.progress div.choose {
+	width: 130px;
+}
+div#cart div.progress div.submit {
+    width: 160px;
+    border-left: 2px dotted #fff;
+}
+div#cart div.progress div.submit a.text {
+	margin-left: 0;
+	margin-right: 15px;
+}
+div#cart div.progress div.no_border {
+	border: none;
+}
+
+/************************************/
+/*** Checkout confirmation styles ***/
+/************************************/
+
+div#cart_confirm div.componentheading div.title {
+	background: url(../images/basket_small_gray.gif) no-repeat left;
+    padding-left: 37px;
+}
+div#cart_confirm div.componentheading div.currency {
+	float: right;
+}
+div#cart_confirm div.componentheading div.currency span {
+	padding-right: 10px;
+}
+div#cart_confirm div.cart_items .contentpane {
+	border-bottom: none;
+}
+div#cart_confirm div.cart_items table.catalog {
+	font-size: 11pt;
+	text-transform: none;
+	padding-right: 100px;
+}
+div#cart_confirm td {
+	width: 25%;
+}
+div#cart_confirm td.product {
+	text-align: right;
+	width: 200px;
+	overflow: hidden;
+}
+div#cart_confirm td.description {
+	text-align: left;
+}
+div#cart_confirm td.description table {
+	margin-left: 50px;
+	height: 50px;
+	width: 150px;
+}
+div#cart_confirm div.discount {
+	clear: both;
+	padding-left: 15px;
+    padding-right: 15px;
+    background: #979797 url(../images/block_small_right.gif) no-repeat top right;
+    border-right: 1px solid #979797;
+}
+div#cart_confirm div.discount_b {
+	border-bottom: 2px dotted #fff;
+	height: 200px;
+}
+div#cart_confirm div.discount div.examples {
+	float: left;
+	color: #fff;
+	font-size: 8pt;
+	font-weight: normal;
+	padding-left: 20px;
+    padding-top: 15px;
+}
+div#cart_confirm div.discount div.examples td {
+	padding: 5px;
+}
+div#cart_confirm div.discount div.examples .big {
+	font-size: 10pt;
+    font-weight: bold;
+}
+div#cart_confirm div.discount div.cart_total {
+}
+div#cart_confirm div.discount div.cart_total table {
+	height: 200px;
+	border: none;
+}
+div#cart_confirm table.price-discount {
+	padding-left: 30px;
+}
+div#cart_confirm div.discount div.examples table.price-discount td {
+	padding: 0;
+	padding-right: 30px;
+}
+
+/**********************************/
+/******** Account styles **********/
+/**********************************/
+
+div#main div.account_title {
+	height: 40px;
+	/*background-image: url(../images/block_right_big.gif);*/
+}
+div#main div.account_title div.sort {
+	padding-left: 70px;
+	margin: 0;
+}
+div#main div.account_title div.sort div {
+	width: 75px;
+	margin: 0;
+}
+div#main div.account_title div.mirror {
+	float: right;
+}
+div#main div.account table.catalog div.image {
+	height: 170px;
+	padding-top: 5px;
+}
+div#main div.account table.catalog div.image img {
+	height: auto;
+}
+div#main div.account table.catalog div.small {
+	height: 145px;
+    padding-top: 30px;
+}
+div#main div.account table.catalog div.small img {
+    height: 110px;
+}
+
+div#header div.color0 {
+    background-color: #979797;
+}
+div#header_l.color1, div#header div.color1, div#main div.color1 div.componentheading, div#main div.color1 div.catalog_bottom {
+    background-color: #9696ff;
+}
+div#header_l.color2, div#header div.color2, div#main div.color2 div.componentheading, div#main div.color2 div.catalog_bottom {
+    background-color: #009b97;
+}
+div#header_l.color3, div#header div.color3, div#main div.color3 div.componentheading, div#main div.color3 div.catalog_bottom {
+    background-color: #0294ff;
+}
+div#header_l.color4, div#header div.color4, div#main div.color4 div.componentheading, div#main div.color4 div.catalog_bottom {
+    background-color: #ff00ff;
+}
+div#header_l.color5, div#header div.color5, div#main div.color5 div.componentheading, div#main div.color5 div.catalog_bottom {
+    background-color: #979606;
+}
+div#header_l.color6, div#header div.color6, div#main div.color6 div.componentheading, div#main div.color6 div.catalog_bottom {
+    background-color: #fa9800;
+}
+div#header_l.color7, div#header div.color7, div#main div.color7 div.componentheading, div#main div.color7 div.catalog_bottom {
+    background-color: #9aff06;
+}
+
+div#header.color1 { background-image: url(../images/colors/1/block_right_big.gif); }
+div#header.color2 { background-image: url(../images/colors/2/block_right_big.gif); }
+div#header.color3 { background-image: url(../images/colors/3/block_right_big.gif); }
+div#header.color4 { background-image: url(../images/colors/4/block_right_big.gif); }
+div#header.color5 { background-image: url(../images/colors/5/block_right_big.gif); }
+div#header.color6 { background-image: url(../images/colors/6/block_right_big.gif); }
+div#header.color7 { background-image: url(../images/colors/7/block_right_big.gif); }
+
+div#header_l.color1 { background-image: url(../images/colors/1/block_big_left.gif); }
+div#header_l.color2 { background-image: url(../images/colors/2/block_big_left.gif); }
+div#header_l.color3 { background-image: url(../images/colors/3/block_big_left.gif); }
+div#header_l.color4 { background-image: url(../images/colors/4/block_big_left.gif); }
+div#header_l.color5 { background-image: url(../images/colors/5/block_big_left.gif); }
+div#header_l.color6 { background-image: url(../images/colors/6/block_big_left.gif); }
+div#header_l.color7 { background-image: url(../images/colors/7/block_big_left.gif); }
+
+div#header.color1 .logout_title { background-image: url(../images/colors/1/account_icon.gif); }
+div#header.color2 .logout_title { background-image: url(../images/colors/2/account_icon.gif); }
+div#header.color3 .logout_title { background-image: url(../images/colors/3/account_icon.gif); }
+div#header.color4 .logout_title { background-image: url(../images/colors/4/account_icon.gif); }
+div#header.color5 .logout_title { background-image: url(../images/colors/5/account_icon.gif); }
+div#header.color6 .logout_title { background-image: url(../images/colors/6/account_icon.gif); }
+div#header.color7 .logout_title { background-image: url(../images/colors/7/account_icon.gif); }
+
+div#header.color1 .settings_title { background-image: url(../images/colors/1/settings_icon.gif); }
+div#header.color2 .settings_title { background-image: url(../images/colors/2/settings_icon.gif); }
+div#header.color3 .settings_title { background-image: url(../images/colors/3/settings_icon.gif); }
+div#header.color4 .settings_title { background-image: url(../images/colors/4/settings_icon.gif); }
+div#header.color5 .settings_title { background-image: url(../images/colors/5/settings_icon.gif); }
+div#header.color6 .settings_title { background-image: url(../images/colors/6/settings_icon.gif); }
+div#header.color7 .settings_title { background-image: url(../images/colors/7/settings_icon.gif); }
+
+div#header.color1 .extend, div#header.color1 .logout_button { background-image: url(../images/colors/1/submit.gif); }
+div#header.color2 .extend, div#header.color2 .logout_button { background-image: url(../images/colors/2/submit.gif); }
+div#header.color3 .extend, div#header.color3 .logout_button { background-image: url(../images/colors/3/submit.gif); }
+div#header.color4 .extend, div#header.color4 .logout_button { background-image: url(../images/colors/4/submit.gif); }
+div#header.color5 .extend, div#header.color5 .logout_button { background-image: url(../images/colors/5/submit.gif); }
+div#header.color6 .extend, div#header.color6 .logout_button { background-image: url(../images/colors/6/submit.gif); }
+div#header.color7 .extend, div#header.color7 .logout_button { background-image: url(../images/colors/7/submit.gif); }
+
+div#main div.color1 div.catalog_bottom {
+	background-image: url(../images/colors/1/block_small_left.gif);
+}
+div#main div.color2 div.catalog_bottom {
+    background-image: url(../images/colors/2/block_small_left.gif);
+}
+div#main div.color3 div.catalog_bottom {
+    background-image: url(../images/colors/3/block_small_left.gif);
+}
+div#main div.color4 div.catalog_bottom {
+    background-image: url(../images/colors/4/block_small_left.gif);
+}
+div#main div.color5 div.catalog_bottom {
+    background-image: url(../images/colors/5/block_small_left.gif);
+}
+div#main div.color6 div.catalog_bottom {
+    background-image: url(../images/colors/6/block_small_left.gif);
+}
+div#main div.color7 div.catalog_bottom {
+    background-image: url(../images/colors/7/block_small_left.gif);
+}
+
+div#main div.color0 div.componentheading {
+    background-image: url(../images/colors/0/block_small_right.gif);
+}
+div#main div.color1 div.componentheading {
+	background-image: url(../images/colors/1/block_small_right.gif);
+}
+div#main div.color2 div.componentheading {
+    background-image: url(../images/colors/2/block_small_right.gif);
+}
+div#main div.color3 div.componentheading {
+    background-image: url(../images/colors/3/block_small_right.gif);
+}
+div#main div.color4 div.componentheading {
+    background-image: url(../images/colors/4/block_small_right.gif);
+}
+div#main div.color5 div.componentheading {
+    background-image: url(../images/colors/5/block_small_right.gif);
+}
+div#main div.color6 div.componentheading {
+    background-image: url(../images/colors/6/block_small_right.gif);
+}
+div#main div.color7 div.componentheading {
+    background-image: url(../images/colors/7/block_small_right.gif);
+}
+
+div#main div.color0 form.search input.submit {
+	background-image: url(../images/colors/0/search_button.gif);
+}
+div#main div.color1 form.search input.submit {
+    background-image: url(../images/colors/1/search_button.gif);
+}
+div#main div.color2 form.search input.submit {
+    background-image: url(../images/colors/2/search_button.gif);
+}
+div#main div.color3 form.search input.submit {
+    background-image: url(../images/colors/3/search_button.gif);
+}
+div#main div.color4 form.search input.submit {
+    background-image: url(../images/colors/4/search_button.gif);
+}
+div#main div.color5 form.search input.submit {
+    background-image: url(../images/colors/5/search_button.gif);
+}
+div#main div.color6 form.search input.submit {
+    background-image: url(../images/colors/6/search_button.gif);
+}
+div#main div.color7 form.search input.submit {
+    background-image: url(../images/colors/7/search_button.gif);
+}
+
+div#main div.color0 div.catalog_bottom span.premium {
+	background-image: url(../images/colors/0/panel_star.gif);
+}
+div#main div.color1 div.catalog_bottom span.premium {
+    background-image: url(../images/colors/1/panel_star.gif);
+}
+div#main div.color2 div.catalog_bottom span.premium {
+    background-image: url(../images/colors/2/panel_star.gif);
+}
+div#main div.color3 div.catalog_bottom span.premium {
+    background-image: url(../images/colors/3/panel_star.gif);
+}
+div#main div.color4 div.catalog_bottom span.premium {
+    background-image: url(../images/colors/4/panel_star.gif);
+}
+div#main div.color5 div.catalog_bottom span.premium {
+    background-image: url(../images/colors/5/panel_star.gif);
+}
+div#main div.color6 div.catalog_bottom span.premium {
+    background-image: url(../images/colors/6/panel_star.gif);
+}
+div#main div.color7 div.catalog_bottom span.premium {
+    background-image: url(../images/colors/7/panel_star.gif);
+}
+
+div#main div.color1 .contentpane {
+	border-color: #8e96df;
+}
+div#main div.color2 .contentpane {
+    border-color: #009b97;
+}
+div#main div.color3 .contentpane {
+    border-color: #0294ff;
+}
+div#main div.color4 .contentpane {
+    border-color: #ff00ff;
+}
+div#main div.color5 .contentpane {
+    border-color: #979606;
+}
+div#main div.color6 .contentpane {
+    border-color: #fa9800;
+}
+div#main div.color7 .contentpane {
+    border-color: #9aff06;
+}
+
+form.settings td {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+form.settings div.size {
+	width: 30px;
+}
+
+/********************************/
+/*** Drag and drop box styles ***/
+/********************************/
+
+div#main div.dragndrop-title {
+	font-size: 10pt;
+}
+div#main div.dragndrop-table {
+	width: 998px;
+    height: 700px;
+    padding: 0;
+    position: relative;
+}
+div#main div.dragndrop-table .scrollable {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: auto;
+}
+.dragndrop-table table {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+    vertical-align: middle;
+}
+.dragndrop-table div.text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: left;
+	padding: 10px;
+}
+
+table.article p {
+	margin: 5px 0;
+}
+
+table.sitemap td {
+	padding-right: 40px;
+}
+table.sitemap td.left {
+	border-left: 1px dotted #60606A;
+}
+table.sitemap td.bottom {
+    border-bottom: 1px dotted #60606A;
+}
+table.sitemap td.line {
+    background: url(../images/sitemap_dot.png) 5px 11px repeat-x;
+}
+table.sitemap td.line span {
+	background: #ffffff;
+	padding-right: 3px;
+}
